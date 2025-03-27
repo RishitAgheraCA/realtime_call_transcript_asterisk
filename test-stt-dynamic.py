@@ -17,7 +17,7 @@ import pytz
 
 load_dotenv()
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/var/lib/asterisk/agi-bin/doalog-ai-a21e352e56a2.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/var/lib/asterisk/agi-bin/google-cloud-stt-key.json"
 OPENAI_API_KEY = os.getenv("OPENAI_KEY","")
 
 
