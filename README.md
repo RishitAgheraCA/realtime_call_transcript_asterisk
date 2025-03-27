@@ -11,9 +11,9 @@ Note: This project contains only python backend that works with asterisk.
 Asterisk runs a python script when a call placed. Using MixMonitor() application of asterisks, on going call recording will be mentained in a FIFO file. Which will be used by google's grpc protocol. The generated transcript will execute multiple openai requests asynchoronously. 
 
 ## Latency:
-=> Real time dialogue retrieval within 1-2 seconds(google cloud stt).
-=> Realtime emoji and speaker dialogue temperature retrieval every 2 to 4 dialogues, using openai.
-=> Rall transcript summarization within 2 to 3 seconds after call ends.
+- Real time dialogue retrieval within **1-2 seconds**(google cloud stt).
+- Realtime emoji and speaker dialogue temperature retrieval every **2 to 4 dialogues**, using openai.
+- Rall transcript summarization within **2 to 3 seconds** after call ends.
 
 ## Features
 - **Real-time call transcription** using Google Speech-to-Text API
