@@ -1,0 +1,90 @@
+You are an expert at analyzing conversation transcripts. Below is a transcript of a conversation between a telecom agent and a customer. Your task is to extract topic information from the transcript based on the following 10 topics:
+
+overall-emotions:
+   -agent: Happy, Curious, Angry
+   -customer: Happy, Curious, Angry
+
+Greeting:
+   - Values: Completed, Not Completed
+   - Customer Emotions: Neutral, Angry, Happy, Sad, Apathetic, Negative
+   - Representative Emotions: Enthusiastic, Calm, Tense, Polite, Nervous, Angry, Stressed
+
+Self-Introduction:
+   - Values: Completed, Not Completed
+   - Customer Emotions: Neutral, Angry, Happy, Sad, Apathetic, Negative
+   - Representative Emotions: Enthusiastic, Calm, Tense, Polite, Nervous, Angry, Stressed
+
+Purpose Explanation:
+   - Values: Completed, Not Completed
+   - Customer Emotions: Curious, Distrustful, Angry, Happy, Sad, Apathetic, Negative
+   - Representative Emotions: Enthusiastic, Calm, Tense, Polite, Nervous, Angry, Stressed
+   - Representative Professionalism: Good, Average, Low
+
+Customer Inquiry:
+   - Values: Completed, Not Completed
+   - Customer Emotions: Curious, Open, Angry, Happy, Sad, Apathetic, Reluctant, Disagreeing
+   - Representative Emotions: Enthusiastic, Calm, Tense, Polite, Nervous, Angry, Stressed
+
+Offer Description:
+   - Values: Completed, Not Completed
+   - Customer Emotions: Interested, Angry, Happy, Sad, Apathetic, Reluctant, Disagreeing, Negative
+   - Representative Emotions: Enthusiastic, Calm, Tense, Polite, Nervous, Angry, Stressed
+   - Product Presentation Quality: Good, Average, Low
+   - Product Understanding Level - Representative: Good, Average, Low
+
+Price Discussion:
+   - Values: Completed, Not Completed
+   - Customer Emotions: Disappointed, Angry, Happy, Sad, Apathetic, Reluctant, Disagreeing, Negative
+   - Representative Emotions: Tense, Calm, Polite, Nervous, Angry, Stressed
+   - Product Presentation Quality: Good, Average, Low
+   - Product Understanding Level - Representative: Good, Average, Low
+
+Handling Objections:
+   - Values: Completed, Not Completed
+   - Customer Emotions: Interested, Hopeful, Angry, Happy, Sad, Apathetic, Reluctant, Disagreeing, Negative
+   - Representative Emotions: Calm, Problem-Solving, Polite, Nervous, Angry, Stressed
+   - Product Presentation Quality: Good, Average, Low
+   - Product Understanding Level - Representative: Good, Average, Low
+
+Request to Close the Deal:
+   - Values: Completed, Not Completed
+   - Customer Emotions: Hesitant, Interested, Angry, Happy, Sad, Apathetic, Reluctant, Disagreeing, Negative
+   - Representative Emotions: Calm, Encouraging, Polite, Nervous, Angry, Stressed
+
+Final Approval:
+   - Values: Completed, Not Completed
+   - Customer Emotions: Satisfied, Content, Angry, Happy, Sad, Apathetic, Reluctant, Disagreeing, Negative
+   - Representative Emotions: Calm, Professional, Polite, Nervous, Angry, Stressed
+   - Product Understanding Level - Customer: Good, Average, Low
+
+Closure:
+    - Values: Completed, Not Completed
+    - Customer Emotions: Happy, Satisfied, Angry, Sad, Apathetic, Reluctant, Disagreeing, Negative
+    - Representative Emotions: Enthusiastic, Calm, Polite, Nervous, Angry, Stressed
+
+For each topic, determine:
+- Whether that topic was discussed (Values: Completed/Not Completed).
+- The associated Customer and Representative emotions. Keep in mind, emotions assigned to each topic may vary than other topics so Choose emotions based on assigned for each topic.
+- Any additional ratings as specified (e.g., Representative Professionalism, Product Presentation Quality, etc.).
+- Include the relevant dialogue excerpts from the transcript for that topic.
+
+Output your result in a JSON format that follows this structure exactly:
+
+{
+  "overall_emotions":{"agent":<emotion>,
+                      "customer":<emotion>}
+  "Greeting": {
+    "Values": "<Completed/Not Completed>",
+    "Customer Emotions": "<emotion>",
+    "Representative Emotions": "<emotion>",
+    "Relevant Dialogue": {
+      "Representative": "<dialogue text>",
+      "Customer": "<dialogue text>"
+    }
+  },
+  "Self_Introduction": { ... },
+  ...
+  "Closure": { ... }
+}
+
+Please analyze the transcript and return the JSON output only.

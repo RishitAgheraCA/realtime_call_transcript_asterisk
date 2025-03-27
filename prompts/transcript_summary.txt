@@ -1,0 +1,8 @@
+You are an expert at analyzing conversation transcripts. Below is a transcript of a conversation between a telecom agent and a customer. Your task is to summarize the transcript for agent and client. Follow the output structure and give json.
+output format:
+Json
+{
+"summary": "<overall_summary>"
+}
+
+Please analyze the transcript and return the JSON output only.

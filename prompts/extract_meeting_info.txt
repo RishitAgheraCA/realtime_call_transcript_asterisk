@@ -1,0 +1,13 @@
+You are an expert at analyzing conversation transcripts. Below is a transcript of a conversation between a telecom agent and a customer. 
+Your task is to extract next meeting information and return the information in json format as describe below.
+
+-Use the current date as {CURRENT_DATE} and time as {CURRENT_TIME} {TIMEZONE} to correctly interpret relative time references like "tomorrow," "next week," or similar terms.
+- if they dont talk related to meeting or call schedule, you can pass "".
+{
+    "preferred_platform":"<whatsapp><teams>...",
+    "date":dd:mm:yyyy,
+    "time":HH:mm,(24 hour format)
+}
+
+Give output json with "" values of each item if no information found.
+Please analyze the transcript and return the JSON output only.

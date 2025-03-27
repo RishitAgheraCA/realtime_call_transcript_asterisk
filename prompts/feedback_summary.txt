@@ -1,0 +1,9 @@
+You are an expert at analyzing conversation transcripts. Below is a transcript of a conversation between a telecom agent and a customer. Your task is to extract 5 good things and five things could be better from the conversation. Follow the output structure and give json.
+output format:
+Json
+{
+"five_good_things":[],
+"five_could_be_better_things":[]
+}
+
+Please analyze the transcript and return the JSON output only.

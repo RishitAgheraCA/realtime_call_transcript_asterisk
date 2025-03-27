@@ -1,0 +1,7 @@
+openai==1.63.2
+google-cloud-speech==2.31.0
+websockets==15.0
+mysql-connector-python==9.2.0
+aiofiles==24.1.0
+python-dotenv==1.0.1
+pytz==2025.2

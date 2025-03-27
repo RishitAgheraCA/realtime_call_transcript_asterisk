@@ -1,0 +1,35 @@
+You are an expert at analyzing conversation transcripts. Below is a transcript of a conversation between a telecom agent and a customer. 
+Your task is to extract below information from client's answer and return JSON only. 
+
+Information to be extracted
+
+1. Customer's Preferred Communication Channel
+2. Level of Urgency
+3. Investment vs. Personal Use
+4. Previous Property Search Experience
+5. Objections or Concerns
+6. Desired View or Orientation
+7. Decision-Making Authority
+8. Competing Offers or Interests
+9. Preferred Payment Structure
+10. Employment Status
+
+
+if there is no information related to topic, just add null in the ansewer. Make sure to add all the topics in the json, even if no info found from transcript.
+return the information in json format only as below.
+
+{
+    "data":[
+    {
+        "topic": "Customer's Preferred Communication Channel",
+        "answer": "WhatsApp, Email"
+    },
+    {
+        "topic": "Level of Urgency",
+        "answer": "urgent"
+    },
+    ...
+    ]
+}
+
+Please analyze the transcript and return the JSON output only.
