@@ -1,9 +1,11 @@
 [![Watch Demo Video]](https://drive.google.com/file/d/1Z2PolJq512NwrvhNrW57QdfzCy0lhZoD/view)
 
-# Real-Time Speech-to-Text System
+# Real-Time Speech-to-Text Call Transcription and Streaming
 
 ## Overview
-This project is a real-time Speech-to-Text (STT) system designed to transcribe live calls and provide summarized insights using AI. It integrates a VoIP calling framework with STT and AI-based summarization to enhance call analysis and automation.
+This project is a real-time Speech-to-Text (STT) system designed to transcribe live calls and provide summarized insights using AI. It integrates a VoIP calling framework with STT and AI-based summarization to enhance call analysis and automation
+
+Note: This project contains only python backend that works with asterisk.
 
 ## Features
 - **Real-time call transcription** using Google Speech-to-Text API
